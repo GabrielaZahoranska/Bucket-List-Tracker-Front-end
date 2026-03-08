@@ -1,0 +1,192 @@
+.breadcrumb {
+  margin-bottom: 1rem;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.goalDetailCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.goalDetailHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.goalDetailHeader h1 {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.badgeDreaming {
+  background: #f7fafc;
+  color: #718096;
+}
+
+.badgePlanning {
+  background: rgba(210, 153, 34, 0.2);
+  color: #d29922;
+}
+
+.badgeDone {
+  background: rgba(63, 185, 80, 0.2);
+  color: #3fb950;
+}
+
+.goalCategory {
+  font-size: 0.85rem;
+  color: #718096;
+  text-transform: capitalize;
+}
+
+.goalDesc {
+  margin: 0.5rem 0 0;
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+.goalMeta {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: var(--radius);
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  background: #fff;
+  color: #2d3748;
+}
+
+.btn:hover {
+  background: #e2e8f0;
+}
+
+.btnPrimary {
+  background: #5b8fb9;
+  color: #fff;
+  border: none;
+}
+
+.btnPrimary:hover {
+  background: #4a7ca3;
+}
+
+.experiencesSection {
+  margin-top: 2rem;
+}
+
+.experiencesSection h2 {
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.timelineDate {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.timelineContent p {
+  margin: 0.25rem 0;
+}
+
+.timelineLocation,
+.timelineNotes,
+.timelineRating,
+.timelineFeeling {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.timelineActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.timelinePhotos {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.timelinePhotos img {
+  max-width: 120px;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid #e2e8f0;
+}
+
+.timelineEmpty {
+  color: #718096;
+  padding: 1rem 0;
+}
+
+.btnSmall {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.btnDanger {
+  background: #f85149;
+  color: #fff;
+  border: none;
+}
+
+.btnDanger:hover {
+  filter: brightness(1.1);
+}
+
+.loadingScreen {
+  padding: 2rem;
+  text-align: center;
+  color: #718096;
+}
+
+.errorMessage {
+  color: #f85149;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .timelineItem {
+    grid-template-columns: 1fr;
+  }
+}

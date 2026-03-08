@@ -1,0 +1,53 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appLayout {
+  background: #fff;
+}
+
+.appHeader {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.appNav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.appNav a {
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.appNav a:hover {
+  color: #5b8fb9;
+}
+
+.appLogout {
+  background: none;
+  border: none;
+  color: #2d3748;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+.appLogout:hover {
+  color: #5b8fb9;
+}
+
+.appMain {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}

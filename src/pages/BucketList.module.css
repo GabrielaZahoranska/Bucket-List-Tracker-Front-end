@@ -1,0 +1,92 @@
+.bucketListPage {
+  text-align: center;
+}
+
+.bucketListTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 1.5rem;
+}
+
+.btnAddGoal {
+  display: inline-block;
+  background: #5b8fb9;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.btnAddGoal:hover {
+  background: #4a7ca3;
+}
+
+.goalsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.goalCardApp {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.goalCardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.goalCardTitle:hover {
+  color: #5b8fb9;
+}
+
+.goalCardStatus {
+  font-size: 0.95rem;
+  color: #2d3748;
+  margin: 0 0 1rem;
+}
+
+.goalCardButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btnCard {
+  background: #e2e8f0;
+  color: #2d3748;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnCard:hover {
+  background: #cbd5e0;
+}
+
+.bucketListEmpty {
+  color: #718096;
+  margin-top: 1rem;
+}
+
+.errorMessage {
+  color: var(--danger);
+  margin: 0.5rem 0;
+}
