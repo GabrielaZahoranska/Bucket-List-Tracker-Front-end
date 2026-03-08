@@ -8,7 +8,6 @@ An app to track your bucket list goals. You can create goals, move them through 
 - **Planning:** https://trello.com/b/eAllWaSa/unit-3-project
 - **Back-end repo:** https://github.com/GabrielaZahoranska/Bucket-List-Tracker-Back-end
 
-To run locally: clone both repos, run `npm run dev` in the back-end folder first (port 5001), add a `.env` file here with `VITE_BACK_END_SERVER_URL=http://localhost:5001`, then `npm install` and `npm run dev` in this folder.
 
 ## Technologies used
 
