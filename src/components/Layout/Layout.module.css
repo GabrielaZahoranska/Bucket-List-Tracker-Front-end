@@ -5,7 +5,7 @@
 }
 
 .appLayout {
-  background: #fff;
+  background: var(--bg);
 }
 
 .appHeader {
