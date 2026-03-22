@@ -35,3 +35,14 @@ a:hover {
   color: var(--accent-hover);
   text-decoration: underline;
 }
+
+/* Keep white text on button-styled links */
+a[class*="btnPrimary"]:hover,
+a[class*="btnLandingPrimary"]:hover,
+a[class*="btnAddGoal"]:hover,
+button[class*="btnPrimary"]:hover,
+button[class*="btnAddGoal"]:hover,
+button[class*="btnDanger"]:hover {
+  color: #fff !important;
+  text-decoration: none;
+}

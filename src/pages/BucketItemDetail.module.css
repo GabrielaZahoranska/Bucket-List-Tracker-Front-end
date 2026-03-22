@@ -90,6 +90,7 @@
 
 .btnPrimary:hover {
   background: #4a7ca3;
+  color: #fff;
 }
 
 .experiencesSection {
@@ -172,6 +173,7 @@
 
 .btnDanger:hover {
   filter: brightness(1.1);
+  color: #fff;
 }
 
 .loadingScreen {

@@ -57,6 +57,7 @@
 
 .btnPrimary:hover:not(:disabled) {
   background: var(--accent-hover);
+  color: #fff;
 }
 
 .btnPrimary:disabled {

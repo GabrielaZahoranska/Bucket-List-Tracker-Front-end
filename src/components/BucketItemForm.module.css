@@ -81,6 +81,7 @@
 
 .btnPrimary:hover:not(:disabled) {
   background: #4a7ca3;
+  color: #fff;
 }
 
 .btnPrimary:disabled {

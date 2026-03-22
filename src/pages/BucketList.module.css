@@ -25,6 +25,7 @@
 
 .btnAddGoal:hover {
   background: #4a7ca3;
+  color: #fff;
 }
 
 .goalsGrid {
