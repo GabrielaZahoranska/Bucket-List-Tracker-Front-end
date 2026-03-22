@@ -1,8 +1,10 @@
+import { apiFetch } from '../utils/apiFetch';
+
 const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL || 'http://localhost:5001'}/api/auth`;
 
 const signUp = async (formData) => {
   try {
-    const res = await fetch(`${BASE_URL}/signup`, {
+    const res = await apiFetch(`${BASE_URL}/signup`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
@@ -17,7 +19,7 @@ const signUp = async (formData) => {
 
 const signIn = async (formData) => {
   try {
-    const res = await fetch(`${BASE_URL}/login`, {
+    const res = await apiFetch(`${BASE_URL}/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

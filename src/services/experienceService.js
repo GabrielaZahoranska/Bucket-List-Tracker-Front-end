@@ -1,8 +1,10 @@
+import { apiFetch } from '../utils/apiFetch';
+
 const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL || 'http://localhost:5001'}/api/experiences`;
 
 const show = async (experienceId) => {
   try {
-    const res = await fetch(`${BASE_URL}/${experienceId}`, {
+    const res = await apiFetch(`${BASE_URL}/${experienceId}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });
     const data = await res.json().catch(() => ({}));
@@ -15,7 +17,7 @@ const show = async (experienceId) => {
 
 const update = async (experienceId, experienceFormData) => {
   try {
-    const res = await fetch(`${BASE_URL}/${experienceId}`, {
+    const res = await apiFetch(`${BASE_URL}/${experienceId}`, {
       method: 'PUT',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
@@ -33,7 +35,7 @@ const update = async (experienceId, experienceFormData) => {
 
 const deleteExperience = async (experienceId) => {
   try {
-    const res = await fetch(`${BASE_URL}/${experienceId}`, {
+    const res = await apiFetch(`${BASE_URL}/${experienceId}`, {
       method: 'DELETE',
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });

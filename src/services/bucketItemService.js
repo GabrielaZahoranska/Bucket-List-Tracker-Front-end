@@ -1,8 +1,10 @@
+import { apiFetch } from '../utils/apiFetch';
+
 const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL || 'http://localhost:5001'}/api/bucketitems`;
 
 const index = async () => {
   try {
-    const res = await fetch(BASE_URL, {
+    const res = await apiFetch(BASE_URL, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });
     const data = await res.json().catch(() => ({}));
@@ -15,7 +17,7 @@ const index = async () => {
 
 const show = async (bucketItemId) => {
   try {
-    const res = await fetch(`${BASE_URL}/${bucketItemId}`, {
+    const res = await apiFetch(`${BASE_URL}/${bucketItemId}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });
     const data = await res.json().catch(() => ({}));
@@ -28,7 +30,7 @@ const show = async (bucketItemId) => {
 
 const create = async (bucketItemFormData) => {
   try {
-    const res = await fetch(BASE_URL, {
+    const res = await apiFetch(BASE_URL, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
@@ -46,7 +48,7 @@ const create = async (bucketItemFormData) => {
 
 const update = async (bucketItemId, bucketItemFormData) => {
   try {
-    const res = await fetch(`${BASE_URL}/${bucketItemId}`, {
+    const res = await apiFetch(`${BASE_URL}/${bucketItemId}`, {
       method: 'PUT',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
@@ -64,7 +66,7 @@ const update = async (bucketItemId, bucketItemFormData) => {
 
 const deleteBucketItem = async (bucketItemId) => {
   try {
-    const res = await fetch(`${BASE_URL}/${bucketItemId}`, {
+    const res = await apiFetch(`${BASE_URL}/${bucketItemId}`, {
       method: 'DELETE',
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });
@@ -80,7 +82,7 @@ const deleteBucketItem = async (bucketItemId) => {
 
 const stats = async () => {
   try {
-    const res = await fetch(`${BASE_URL}/stats`, {
+    const res = await apiFetch(`${BASE_URL}/stats`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });
     const data = await res.json().catch(() => ({}));
@@ -93,7 +95,7 @@ const stats = async () => {
 
 const indexExperiences = async (bucketItemId) => {
   try {
-    const res = await fetch(`${BASE_URL}/${bucketItemId}/experiences`, {
+    const res = await apiFetch(`${BASE_URL}/${bucketItemId}/experiences`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
     });
     const data = await res.json().catch(() => ({}));
@@ -106,7 +108,7 @@ const indexExperiences = async (bucketItemId) => {
 
 const createExperience = async (bucketItemId, experienceFormData) => {
   try {
-    const res = await fetch(`${BASE_URL}/${bucketItemId}/experiences`, {
+    const res = await apiFetch(`${BASE_URL}/${bucketItemId}/experiences`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
